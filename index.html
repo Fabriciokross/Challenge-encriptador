@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/img/Logo.png" alt="logo de alura" >
+    </header>
+    <main class="principal">
+        <div class="mensaje">
+            <textarea class="mensaje__texto" name="texto" id="texto" cols="30" rows="5" placeholder="Ingrese el texto aqui"></textarea>
+            <span class="mensaje__aviso">
+                <img src="/img/icono-de-exclamacion.png" alt="atencion">
+                Solo letras minúsculas y sin acentos.
+            </span>
+            <div class="mensaje__botones">
+                <button class="botao botao__btn-encriptar" onclick="btnEncriptar()">encriptar</button>
+                <button class="botao botao__btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="resultado">
+            <img src="/img/Muñeco.png" alt="muneco imagen">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <span>Ingresa el texto que desees encriptar o desencriptar.</span>
+        </div>
+    </main>
+    <script src="/app.js"></script>
+</body>
+</html>
